@@ -1,0 +1,19 @@
+{
+  "name": "emby.apiclient.javascript",
+  "version": "1.0.0",
+  "description": "Emby.ApiClient.Javascript =================================",
+  "main": "apiclient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatharry/Emby.ApiClient.Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hatharry/Emby.ApiClient.Javascript/issues"
+  },
+  "homepage": "https://github.com/hatharry/Emby.ApiClient.Javascript#readme"
+}
