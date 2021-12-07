@@ -1,6 +1,9 @@
 ﻿/* jshint module: true */
 
 import events from './events.js';
+import fetch from 'node-fetch'
+import AbortController from 'node-abort-controller'
+import WebSocket from 'ws'
 
 function replaceAll(originalString, strReplace, strWith) {
     const reg = new RegExp(strReplace, 'ig');
@@ -1314,6 +1317,20 @@ class ApiClient {
         const url = this.getUrl(`Users/${userId}/Items/Root`);
 
         return this.getJSON(url);
+    }
+
+    /**
+     * Gets the corresponding local user from a connect user id
+     */
+    getConnectExchange(options) {
+
+        if (!options) {
+            throw new Error('null options')
+        }
+
+        const url = this.getUrl('/Connect/Exchange', options || {})
+
+        return this.getJSON(url)
     }
 
     getNotificationSummary(userId) {
