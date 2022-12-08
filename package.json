@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hatharry/Emby.ApiClient.Javascript.git"
+    "url": "git+https://github.com/hatharry/Emby.ApiClient.Javascript.git#node"
   },
   "author": "",
   "license": "ISC",
