@@ -1,9 +1,6 @@
 ﻿/* jshint module: true */
 
 import events from './events.js';
-import fetch from 'node-fetch'
-import AbortController from 'node-abort-controller'
-import WebSocket from 'ws'
 
 function replaceAll(originalString, strReplace, strWith) {
     const reg = new RegExp(strReplace, 'ig');
