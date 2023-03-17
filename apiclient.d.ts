@@ -24,7 +24,7 @@ declare class ApiClient {
     /**
      * Gets the server address.
      */
-    serverAddress(val: any): any;
+    serverAddress(val: any): string;
     onNetworkChanged(): void;
     /**
      * Creates an api url based on a handler name and query string parameters
@@ -47,7 +47,7 @@ declare class ApiClient {
     /**
      * Gets or sets the current user id.
      */
-    getCurrentUserId(): any;
+    getCurrentUserId(): string;
     accessToken(): any;
     serverId(): any;
     serverName(): any;
@@ -112,7 +112,7 @@ declare class ApiClient {
     getLiveTvInfo(options: any): any;
     getLiveTvGuideInfo(options: any): any;
     getLiveTvChannel(id: any, userId: any): any;
-    getLiveTvChannels(options: any): any;
+    getLiveTvChannels(options: any): Promise<QueryResultBaseItemDto>;
     getLiveTvPrograms(options?: {}): any;
     getEpg(options?: {}): any;
     getLiveTvRecommendedPrograms(options?: {}): any;
@@ -346,7 +346,7 @@ declare class ApiClient {
     /**
      * Gets a genre
      */
-    getGenre(name: any, userId: any): any;
+    getGenre(name: any, userId: any): Promise<BaseItemDto>;
     getMusicGenre(name: any, userId: any): any;
     getGameGenre(name: any, userId: any): any;
     /**
@@ -469,7 +469,7 @@ declare class ApiClient {
      * searchTerm - search term to use as a filter
      */
     getItems(userId: string, options: any, signal: any): Promise<QueryResultBaseItemDto>;
-    getResumableItems(userId: any, options: any): any;
+    getResumableItems(userId: any, options: any): Promise<QueryResultBaseItemDto>;
     getMovieRecommendations(options: any): Promise<Array<RecommendationDto>>;
     getUpcomingEpisodes(options: any): any;
     getUserViews(options: any, userId: any, signal: any): any;
