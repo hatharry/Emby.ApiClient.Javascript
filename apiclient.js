@@ -1,6 +1,7 @@
 ﻿/* jshint module: true */
 
 import events from './events.js';
+import fetch from 'node-fetch';
 
 function replaceAll(originalString, strReplace, strWith) {
     const reg = new RegExp(strReplace, 'ig');
