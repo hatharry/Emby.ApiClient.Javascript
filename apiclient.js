@@ -2208,6 +2208,16 @@ class ApiClient {
     /**
      * Gets the current server configuration
      */
+    getDevices() {
+
+        const url = this.getUrl("Devices");
+
+        return this.getJSON(url);
+    }
+
+    /**
+     * Gets the current server configuration
+     */
     getDevicesOptions() {
 
         const url = this.getUrl("System/Configuration/devices");

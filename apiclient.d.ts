@@ -229,6 +229,10 @@ declare class ApiClient {
      */
     getServerConfiguration(): any;
     /**
+     * Gets the devices
+     */
+    getDevices(): any;
+    /**
      * Gets the current server configuration
      */
     getDevicesOptions(): any;
