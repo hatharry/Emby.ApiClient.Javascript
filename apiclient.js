@@ -2206,7 +2206,7 @@ class ApiClient {
     }
 
     /**
-     * Gets the current server configuration
+     * Gets the devices
      */
     getDevices() {
 
