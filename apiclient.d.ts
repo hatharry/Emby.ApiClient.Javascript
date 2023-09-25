@@ -325,7 +325,7 @@ declare class ApiClient {
     getItemImageInfos(itemId: any): any;
     getCriticReviews(itemId: any, options: any): any;
     getItemDownloadUrl(itemId: any, mediaSourceId: any): any;
-    getSessions(options: { ControllableByUserId?: string, DeviceId?: string, Id?: string }): Promise<Array<SessionSessionInfo>>;
+    getSessions(options: { ControllableByUserId?: string, DeviceId?: string, Id?: string, IncludeAllSessionsIfAdmin?: boolean }): Promise<Array<SessionSessionInfo>>;
     /**
      * Uploads a user image
      * @param {String} userId
