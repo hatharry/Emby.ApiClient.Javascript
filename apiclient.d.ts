@@ -3956,7 +3956,7 @@ export interface Devices {
      * @type {Array<Device>}
      * @memberof Devices
      */
-    Items?: Array<Device>;
+    Items: Array<Device>;
 }
 
 /**
@@ -3970,23 +3970,29 @@ export interface Device {
      * @type {string}
      * @memberof Device
      */
-    Id?: string;
+    Id: string;
     /**
      * 
      * @type {string}
      * @memberof Device
      */
-    Name?: string;
+    Name: string;
     /**
      * 
      * @type {string}
      * @memberof Device
      */
-    ReportedDeviceId?: string;
+    ReportedDeviceId: string;
     /**
      * 
      * @type {string}
      * @memberof Device
      */
-    LastUserId?: string;
+    LastUserId: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Device
+     */
+    AppName: string;
 }
