@@ -231,7 +231,7 @@ declare class ApiClient {
     /**
      * Gets the devices
      */
-    getDevices(): any;
+    getDevices(): Promise<Devices>;
     /**
      * Gets the current server configuration
      */
@@ -3943,4 +3943,50 @@ export namespace DlnaProfileCondition {
         VideoRange = 'VideoRange',
         VideoRotation = 'VideoRotation'
     }
+}
+
+/**
+ * 
+ * @export
+ * @interface Devices
+ */
+export interface Devices {
+    /**
+     * 
+     * @type {Array<Device>}
+     * @memberof Devices
+     */
+    Items?: Array<Device>;
+}
+
+/**
+ * 
+ * @export
+ * @interface Device
+ */
+export interface Device {
+    /**
+     * 
+     * @type {string}
+     * @memberof Device
+     */
+    Id?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Device
+     */
+    Name?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Device
+     */
+    ReportedDeviceId?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Device
+     */
+    LastUserId?: string;
 }
